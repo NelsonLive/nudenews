@@ -4,46 +4,51 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NudeNews</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="p-3 mb-2 color-fondo text-black">
+    
+      <div class="container-lg">
+      <nav class="navbar navbar-expand-lg bg-body-primary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">NudeNews</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            NudeNews
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#autores">Ranking</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Lorem Ipsum</a>
-              </li>
-            </ul>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link " aria-current="page" href="#carouselExampleAutoplaying">Inicio</a>
+              <a class="nav-link" href="#noticias">Noticias</a>
+              <a class="nav-link" href="#ranking">Personas Influyentes</a>
+            </div>
           </div>
         </div>
       </nav>
-
+</div>
 
       <div class="container-md">
 
-        <h1 class="text-center">Noticias Medioambientales</h1>
+        <h1 class="text-center añadir-padding">Noticias Medioambientales</h1>
+
+
 
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="DLT9452291.jpeg" class="d-block w-100" alt="...">
+                <img src="./assets/images/1.jpg" class="d-block w-100" alt="Banner de Aportaciones Medioambientales">
               </div>
               <div class="carousel-item">
-                <img src="DLT9452291.jpeg" class="d-block w-100" alt="...">
+                <img src="./assets/images/2.jpg" class="d-block w-100" alt="Banner de Desastres Naturales">
               </div>
               <div class="carousel-item">
-                <img src="DLT9452291.jpeg" class="d-block w-100" alt="...">
+                <img src="./assets/images/3.jpg" class="d-block w-100" alt="Banner de Personas Influyentes">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -57,39 +62,171 @@
           </div>
 
 
+        </div>
+
+
+       
+
+
+<!-- No he conseguit que el aside funcioni responsive
+
+   <aside class="sidebar" id="sidebar-1" style=" padding: 10px;" title="Información adicional">
+        <h3>Noticias de Última Hora</h3>
+
+          <p>En las últimas horas, un devastador incendio forestal ha estallado en la región del Amazonas, una de las áreas más importantes en términos de biodiversidad y captura de carbono del mundo.</p>
+
+      </aside>
+
+-->
+   
+
+<!-- Noticias -->
+            
+      <div id="noticias" class="container mx-auto mt-4 añadir-padding">
+
+        <h2 class="text-center añadir-padding">Noticias</h2>
+        <div class="row">
+
+
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/images/sobrepesca.jpg" class="card-img-top" alt="Imagen de Pesca">
+              <div class="card-body">
+                <h5 class="card-title">Principales amenazas del océano</h5>
+                <p>La pesca insostenible es una de las mayores amenazas de los océanos. Las flotas pesqueras han ganado en tamaño y potencia desde la década de 1950, pero debido a le explotación de los recursos del mar han de invertir cinco veces más esfuerzo para obtener el mismo volumen de capturas. En otras palabras, hay menos peces que pescar.</p>
+                  <a href="https://www.nationalgeographic.com.es/medio-ambiente/principales-amenazas-que-acechan-a-oceanos_15586 " class="button"><i class="fas fa-link"></i>Más Información</a>
+              </div>
+            </div>
+          </div>    
+            
+
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/images/transporte maritimo.jpg" class="card-img-top" alt="Imagen de Barco">
+              <div class="card-body">
+                <h5 class="card-title">Impacto ecológico del transporte marítimo</h5>
+                    <p>El transporte marítimo es uno de los modos de transporte más importantes del mundo. De hecho, ya sea por razones comerciales (el 90% del comercio mundial de mercancías se realiza por mar) o por turismo, el transporte marítimo es un sector en rápido crecimiento.  Hoy en día, el transporte marítimo es esencial, pero tiene un impacto medioambiental.</p>
+                  <a href="https://www.luz-gas.es/noticias/impacto-ecologico-transporte-maritimo/" class="button"><i class="fas fa-link"></i>Más Información</a>
+              </div>
+            </div>
+          </div>    
+
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/images/mineria submarina.jpg" class="card-img-top" alt="Imagen de Mineria Submarina">
+              <div class="card-body">
+                <h5 class="card-title">La minería submarina amenaza más de 5.000 especies recién descubiertas en el Pacífico</h5>
+                <p>A miles de metros de profundidad en el Océano Pacífico, en el ambiente hostil de la Zona del Abismo, abunda una biodiversidad de animales inimaginable. En uno de los rincones más desconocidos y oscuros de la tierra, entonces esta fauna ha permanecido intacta ultimamente. </p>
+                  <a href="https://www.eldiarioweb.com/2023/05/en-el-pacifico-la-mineria-submarina-amenaza-a-5-000-especies-recien-descubiertas/" class="button"><i class="fas fa-link"></i>Más Información</a>
+              </div>
+            </div>
+          </div>    
+
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/images/lluvia acida.jpg" class="card-img-top" alt="Imagen de Lluvia Acida">
+              <div class="card-body">
+                <h5 class="card-title">La lluvia ácida: un problema ambiental grave</h5>
+                <p>La lluvia ácida es un problema ambiental grave que se produce cuando los gases contaminantes, como el dióxido de azufre y el óxido de nitrógeno, se liberan a la atmósfera y reaccionan con el agua y el oxígeno. Estos gases forman ácidos que pueden depositarse en la tierra, el agua y los ecosistemas.   Las principales fuentes de contaminación por lluvia ácida son las centrales eléctricas que queman carbón, los vehículos de motor y las industrias.</p>
+                  <a href="https://noticiasdelaciencia.com/art/47668/la-lluvia-acida-un-problema-ambiental-grave#google_vignette" class="button"><i class="fas fa-link"></i>Más Información</a>
+              </div>
+            </div>
+          </div>    
+
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/images/energia renovable.jpg" class="card-img-top" alt="Imagen de Energias Renovables">
+              <div class="card-body">
+                <h5 class="card-title">Las energías renovables también tienen un impacto negativo en el medioambiente</h5>
+                <p>Aunque es cierto que la electricidad procedente de sol, el viento y la fuerza del agua no implica la quema de ninguna sustancia -como el petróleo, gas natural o carbón-, las energías "renovables" o "limpias" tampoco son tal, pues dependen en cierta medida de productos químicos y recursos naturales limitados que deben extraerse de la tierra, al igual que la industria de la energía "sucia". </p>
+                  <a href="https://www.eleconomista.es/energia/noticias/11727460/04/22/No-tan-limpias-las-energias-renovables-tambien-tienen-un-impacto-negativo-en-el-medioambiente.html" class="button"><i class="fas fa-link"></i>Más Información</a>
+              </div>
+            </div>
+          </div>    
+
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/images/sequia.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">La sequía aumenta en España y arriesga la alimentación y la agricultura y la salud</h5>
+                     <p>
+                      ONG ambientales alertan de que la sequía aumenta en España y arriesga la alimentación y la agricultura y la salud   El 75 por ciento de la superficie española sufre riesgo de desertificación lo que supone cifras más altas que las de países como Mauritania, Níger o Egipto y solo más bajas que las de Grecia, según datos de la Organización de Naciones Unidas (ONU), que celebra este sábado</p>
+                  <a href="https://www.europapress.es/sociedad/medio-ambiente-00647/noticia-ong-ambientales-alertan-sequia-aumenta-espana-arriesga-alimentacion-agricultura-salud-20230616184042.html" class="button"><i class="fas fa-link"></i>Más Información</a>
+              </div>
+            </div>
+          </div>    
+
+        </div>
       </div>
 
+
+
+
+      
+
+      <!-- Personas Influyentes -->
       
       <div class="container-sm" id="autores">
 
 
-        <h1 class="text-center">Ranking Autores</h1>
+        <h2 id="ranking" class="text-center añadir-padding">Personas Influyentes</h2>
 
 
-        <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Obama
-              <span class="badge bg-primary rounded-pill">1</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Rita Thunberg
-              <span class="badge bg-primary rounded-pill">2</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Stephen Kings
-              <span class="badge bg-primary rounded-pill">3</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                Joan Oro
-                <span class="badge bg-primary rounded-pill">4</span>
-              </li>
-          </ul>
+        <div class="list-group">
+          <a href="https://es.wikipedia.org/wiki/Jane_Goodall" class="list-group-item list-group-item-action"><u>Jane Goodall</u></a>
+          <a href="https://es.wikipedia.org/wiki/Greta_Thunberg" class="list-group-item list-group-item-action"><u>Greta Thunberg </u></a>
+          <a href="https://es.wikipedia.org/wiki/David_Attenborough" class="list-group-item list-group-item-action"><u>David Attenborough</u></a>
+          <a href="https://es.wikipedia.org/wiki/Wangari_Maathai#" class="list-group-item list-group-item-action"><u>Wangari Maathai</u></a>
+          <a href="https://es.wikipedia.org/wiki/Sylvia_Earle" class="list-group-item list-group-item-action"><u>Sylvia Earle</u></a>
+        </div>
 
       </div>
+
+    <div class="añadir-padding"></div>  
+
+        <!-- Footer -->
+        
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row ">
+          <div class="col-sm-12 col-md-6">
+            <h6>SOBRE NOSOTROS</h6>
+            <p class="text-justify">En <b>NudeNews</b> creemos en el poder de la información para generar un cambio positivo. Nuestro equipo de apasionados <i>escritores, periodistas y expertos en medio ambiente</i> trabaja incansablemente para ofrecerte las historias más relevantes, investigaciones profundas y tendencias emergentes en el mundo de la ecología y la sostenibilidad.</p>
+          </div>
+
+
+
+          <div class="col-xs-6 col-md-3">
+            <h6>ENLACES</h6>
+            <ul class="footer-links">
+              <li><a href="#carouselExampleAutoplaying">Inicio</a></li>
+              <li><a href="#noticias">Noticias</a></li>
+              <li><a href="#ranking">Ranking</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>CONTACTO</h6>
+            <ul class="footer-links">
+              <li>Carrer Moragues n19</li>
+              <li>alumnes@udl.cat</li>
+              <li>+34 601 21 51 23</li>
+
+            </ul>
+          </div>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23861.831629022694!2d0.5993353093584072!3d41.61837254449514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a6e048e73bd37f%3A0xa0d32ea2d259aaaf!2zTMOpcmlkYQ!5e0!3m2!1ses!2ses!4v1698877056449!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <hr>
+      </div>
+
+</footer>
 
       
      
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </div>
   </body>
-</html>
+</html> 
